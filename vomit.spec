@@ -7,6 +7,7 @@ Group: Networking/Other
 URL: http://vomit.xtdnet.nl/
 
 Source: http://vomit.xtdnet.nl/%{name}-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:	libdnet-devel
 BuildRequires:	libevent-devel
 BuildRequires:	libpcap-devel
