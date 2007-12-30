@@ -1,7 +1,7 @@
 Summary: Vomit - voice over misconfigured internet telephones
 Name: vomit
 Version: 0.2c
-Release: %mkrel 1
+Release: %mkrel 2
 License: BSD
 Group: Networking/Other
 URL: http://vomit.xtdnet.nl/
@@ -22,7 +22,7 @@ is probably related to H.323.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
