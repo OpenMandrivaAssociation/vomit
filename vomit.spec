@@ -1,16 +1,15 @@
-Summary: Vomit - voice over misconfigured internet telephones
-Name: vomit
-Version: 0.2c
-Release: %mkrel 2
-License: BSD
-Group: Networking/Other
-URL: http://vomit.xtdnet.nl/
-
-Source: http://vomit.xtdnet.nl/%{name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Summary:	Vomit - voice over misconfigured internet telephones
+Name:		vomit
+Version:	0.2c
+Release:	%mkrel 3
+License:	BSD
+Group:		Networking/Other
+URL:		http://vomit.xtdnet.nl/
+Source:		http://vomit.xtdnet.nl/%{name}-%{version}.tar.bz2
 BuildRequires:	libdnet-devel
 BuildRequires:	libevent-devel
 BuildRequires:	libpcap-devel
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The vomit utility converts a Cisco IP phone conversation into a wave file
@@ -19,6 +18,7 @@ output file. Vomit is not a VoIP sniffer also it could be but the naming
 is probably related to H.323.
 
 %prep
+
 %setup -q
 
 %build
@@ -37,5 +37,3 @@ is probably related to H.323.
 %doc README
 %{_bindir}/vomit
 %{_mandir}/*/vomit.*
-
-
