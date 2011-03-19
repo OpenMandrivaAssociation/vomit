@@ -6,6 +6,7 @@ License:	BSD
 Group:		Networking/Other
 URL:		http://vomit.xtdnet.nl/
 Source:		http://vomit.xtdnet.nl/%{name}-%{version}.tar.bz2
+Patch0:		vomit-remove-old-libevent-code.patch
 BuildRequires:	libdnet-devel
 BuildRequires:	libevent-devel
 BuildRequires:	libpcap-devel
@@ -18,8 +19,8 @@ output file. Vomit is not a VoIP sniffer also it could be but the naming
 is probably related to H.323.
 
 %prep
-
 %setup -q
+%patch0 -p1
 
 %build
 %configure2_5x
@@ -27,7 +28,7 @@ is probably related to H.323.
 
 %install
 %{__rm} -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 %clean
 %{__rm} -rf %{buildroot}
