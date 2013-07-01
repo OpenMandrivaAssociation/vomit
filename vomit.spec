@@ -1,4 +1,4 @@
-Summary:	Vomit - voice over misconfigured internet telephones
+Summary:	- voice over misconfigured internet telephones
 Name:		vomit
 Version:	0.2c
 Release:	8
