@@ -1,7 +1,7 @@
-Summary:	- voice over misconfigured internet telephones
+Summary:	Voice over misconfigured internet telephones
 Name:		vomit
 Version:	0.2c
-Release:	8
+Release:	9
 License:	BSD
 Group:		Networking/Other
 Url:		http://vomit.xtdnet.nl/
