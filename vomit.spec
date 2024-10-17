@@ -4,7 +4,7 @@ Version:	0.2c
 Release:	10
 License:	BSD
 Group:		Networking/Other
-Url:		http://vomit.xtdnet.nl/
+Url:		https://vomit.xtdnet.nl/
 Source0:	http://vomit.xtdnet.nl/%{name}-%{version}.tar.gz
 Patch0:		vomit-remove-old-libevent-code.patch
 BuildRequires:	dnet-devel
