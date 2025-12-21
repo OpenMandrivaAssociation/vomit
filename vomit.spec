@@ -7,6 +7,11 @@ Group:		Networking/Other
 Url:		https://vomit.xtdnet.nl/
 Source0:	http://vomit.xtdnet.nl/%{name}-%{version}.tar.gz
 Patch0:		vomit-remove-old-libevent-code.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	dnet-devel
 BuildRequires:	pcap-devel
 BuildRequires:	pkgconfig(libevent)
